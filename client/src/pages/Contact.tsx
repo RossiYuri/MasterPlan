@@ -112,24 +112,40 @@ export default function Contact() {
       {/* Contact Information */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
             {contactItems.map((item, idx) => {
               const Icon = item.icon;
-              return (
-                <GlowCard
-                  key={idx}
-                  glowColor="blue"
-                  customSize={true}
-                  className="w-full bg-white p-8 text-center"
-                >
-                  <div className="flex flex-col items-center justify-center h-full">
-                    <Icon className="w-12 h-12 text-blue-700 mx-auto mb-4" />
-                    <h3 className="font-poppins font-bold text-lg text-slate-900 mb-2">
-                      {item.title}
-                    </h3>
-                    <div className="text-slate-700 font-semibold">{item.content}</div>
+
+              const cardContent = (
+                <div className="flex flex-col items-center justify-center">
+                  <Icon className="w-12 h-12 text-blue-700 mx-auto mb-4" />
+                  <h3 className="font-poppins font-bold text-lg text-slate-900 mb-2">
+                    {item.title}
+                  </h3>
+                  <div className="text-slate-700 font-semibold break-words">
+                    {item.content}
                   </div>
-                </GlowCard>
+                </div>
+              );
+
+              return (
+                <div key={idx} className="w-full">
+                  {/* Mobile */}
+                  <div className="md:hidden w-full bg-white p-6 text-center rounded-lg border border-slate-200 shadow-md">
+                    {cardContent}
+                  </div>
+
+                  {/* Desktop */}
+                  <div className="hidden md:block">
+                    <GlowCard
+                      glowColor="blue"
+                      customSize={true}
+                      className="w-full h-[245px] bg-white p-8 text-center flex items-center justify-center"
+                    >
+                      {cardContent}
+                    </GlowCard>
+                  </div>
+                </div>
               );
             })}
           </div>

@@ -59,7 +59,7 @@ export default function Home() {
 
       {/* Time Counter - Micro-interaction */}
       <section className="py-0 bg-white">
-          <TimeCounter />
+        <TimeCounter />
       </section>
 
       {/* Industry Carousel - Circular Navigation */}
@@ -88,7 +88,7 @@ export default function Home() {
             Confiança de grandes empresas nacionais e internacionais
           </motion.p>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             {clients.map((client, idx) => (
               <motion.div
                 key={idx}
@@ -99,18 +99,31 @@ export default function Home() {
                 whileHover={{ translateY: -4 }}
                 className="w-full h-full"
               >
-                <GlowCard
-                  glowColor="blue"
-                  customSize={true}
-                  className="w-full h-32 bg-white flex items-center justify-center"
-                >
+                {/* Mobile: card estático */}
+                <div className="md:hidden w-full h-28 bg-white rounded-lg border border-slate-200 shadow-md flex items-center justify-center">
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="max-w-full max-h-24 object-contain"
+                    className="max-w-full max-h-20 object-contain"
                     title={client.name}
                   />
-                </GlowCard>
+                </div>
+
+                {/* Desktop: glow card */}
+                <div className="hidden md:block">
+                  <GlowCard
+                    glowColor="blue"
+                    customSize={true}
+                    className="w-full h-32 bg-white flex items-center justify-center"
+                  >
+                    <img
+                      src={client.logo}
+                      alt={client.name}
+                      className="max-w-full max-h-24 object-contain"
+                      title={client.name}
+                    />
+                  </GlowCard>
+                </div>
               </motion.div>
             ))}
           </div>

@@ -152,8 +152,8 @@ export default function Services() {
       {/* Why Choose Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="rounded-lg overflow-hidden h-96 bg-slate-900">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="hidden lg:block rounded-lg overflow-hidden h-96 bg-slate-900">
               <SplineScene
                 scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
                 className="w-full h-full"
