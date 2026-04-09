@@ -121,8 +121,7 @@ useEffect(() => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.8 }}
           >
-            Engenharia multidisciplinar com foco em performance, segurança e
-            conformidade industrial
+            Engenharia Multidisciplinar no Rio de Janeiro para Projetos Industriais e Prediais
           </motion.p>
 
         </div>
