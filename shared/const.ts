@@ -75,29 +75,40 @@ export const DISCIPLINES = [
     id: "processo",
     title: "Processo",
     description: "Engenharia de processo e otimização de fluxos",
+    competencies: ["Simulação de processos", "Otimização de fluxos", "Balanço de massa e energia"],
   },
   {
     id: "mecanica",
     title: "Mecânica",
     description: "Projeto e análise de sistemas mecânicos",
+    competencies: ["Projeto de equipamentos", "Análise de tensões", "Seleção de materiais"],
   },
   {
     id: "tubulacao",
     title: "Tubulação",
     description: "Design e especificação de sistemas de tubulação",
+    competencies: ["Design de sistemas", "Especificação de tubos", "Análise de fluxo"],
   },
   {
     id: "estruturas",
     title: "Estruturas Metálicas",
     description: "Projeto de estruturas metálicas e suportes",
+    competencies: ["Projeto de estruturas", "Análise estrutural", "Dimensionamento"],
   },
   {
     id: "civil",
     title: "Civil (Concreto)",
     description: "Engenharia civil e estruturas de concreto",
+    competencies: ["Projetos de concreto", "Fundações", "Estruturas de suporte"],
   },
-
+  {
+    id: "eletrica",
+    title: "Elétrica",
+    description: "Projeto e especificação de sistemas elétricos industriais",
+    competencies: ["Projeto de painéis elétricos", "Dimensionamento de cabos", "Especificação de equipamentos"],
+  },
 ];
+
 
 export const SEGMENTS = [
   {

@@ -83,7 +83,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: "Localização",
-      content: "Rio de Janeiro, RJ",
+      content: "Niterói, RJ",
     },
   ];
 

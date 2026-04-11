@@ -28,7 +28,7 @@ export default function Eletrica() {
         "Projeto de Energia Padrão Light- Ampla Cemig- Eletropaulo e etc",
         "Estudos de Engenharia para Conservação de Energia",
         "Instalações elétricas em Geral",
-        "Sistemas de Proteção Atmosféricos (SPDA)",
+        "Sistemas de Proteção Contra Descargas Atmosféricas (SPDA)",
         "Laudos - Revisões e Adequações de NR10",
       ],
     },
